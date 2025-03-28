@@ -2,7 +2,7 @@
 #define K_NUMBERS_H
 
 #include <iostream>
-// FIX ME ненужный импорт
+// FIX ME РЅРµРЅСѓР¶РЅС‹Р№ РёРјРїРѕСЂС‚
 //#include <cmath>
 
 int main();

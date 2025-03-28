@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
-// FIX ME ненужный импорт
+// FIX ME РЅРµРЅСѓР¶РЅС‹Р№ РёРјРїРѕСЂС‚
 //#include <algorithm>
 
 int main();
