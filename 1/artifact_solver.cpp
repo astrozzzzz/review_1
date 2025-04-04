@@ -22,8 +22,17 @@ using namespace std;
  */
 bool ReadInput(ifstream& stream, int& n, int& b, vector<int>& weights, vector<int>& volumes) {
     if (!stream.is_open()) return false;
-    stream >> n;
-    stream >> b;
+    // FIX ME Не было проверки на тип входных данных
+    if (!(stream >> n)) {
+        cout << "Ошибка: не удалось прочитать n как целое число." << endl;
+        stream.close();
+        return false;
+    }
+    if (!(stream >> b)) {
+        cout << "Ошибка: не удалось прочитать b как целое число." << endl;
+        stream.close();
+        return false;
+    }
     weights.resize(n + 1);
     volumes.resize(n + 1);
     for (int i = 1; i <= n; i++)
